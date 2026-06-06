@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyborg Nexus | Advanced Neural Web</title>
+    <meta name="description" content="A highly interactive futuristic cyborg-themed application.">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto+Mono:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="cursor-glow"></div>
+
+    <!-- 1. Terminal Boot-up Loader -->
+    <div id="terminal-loader">
+        <div class="terminal-content">
+            <p class="sys-msg">> SYSTEM BOOT INITIATED...</p>
+            <p class="sys-msg">> LOADING KERNEL MODULES...</p>
+            <p class="sys-msg">> ESTABLISHING NEURAL LINK...</p>
+            <p class="sys-msg">> BYPASSING SECURITY PROTOCOLS...</p>
+            <p class="sys-msg success">> ACCESS GRANTED. WELCOME TO NEXUS.</p>
+            <div class="loading-bar"><div class="loading-progress"></div></div>
+        </div>
+    </div>
+
+    <!-- 2. Interactive Canvas Background -->
+    <canvas id="neural-canvas"></canvas>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">CYBORG<span>NEXUS</span></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#hero">Core</a></li>
+                <li><a href="#features">Systems</a></li>
+                <li><a href="#roadmap">Timeline</a></li>
+                <li><a href="#upgrades">Upgrades</a></li>
+            </ul>
+        </nav>
+        <div class="nav-actions">
+            <!-- Theme Toggle -->
+            <button id="theme-toggle" class="icon-btn">⚡ COMBAT MODE</button>
+            <button class="cta-button nav-cta">Join Now</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="glitch-text" data-text="TRANSCEND THE FLESH">TRANSCEND THE FLESH</h1>
+            <p class="tagline">The next evolution of human consciousness. Seamlessly integrate your mind with our state-of-the-art neural network.</p>
+            <div class="hero-buttons">
+                <button class="cta-button primary">Initiate Link</button>
+                <button class="cta-button secondary" id="diagnostics-btn">System Diagnostics</button>
+            </div>
+            <div class="live-stats">
+                <div class="stat"><span class="stat-val" id="sync-rate">98.4</span>%<br>Sync Rate</div>
+                <div class="stat"><span class="stat-val">1.2</span>ms<br>Latency</div>
+                <div class="stat"><span class="stat-val" id="active-nodes">14,204</span><br>Active Nodes</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section hidden">
+        <h2 class="section-title">System Capabilities</h2>
+        <div class="features-grid">
+            <div class="feature-card tilt-card">
+                <div class="feature-icon">🧠</div>
+                <h3>Neural Overdrive</h3>
+                <p>Process information at 1000x human capacity. Download skills directly to your motor cortex in seconds.</p>
+                <div class="card-glow"></div>
+            </div>
+            <div class="feature-card tilt-card">
+                <div class="feature-icon">🦾</div>
+                <h3>Kinetic Augmentation</h3>
+                <p>Carbon-fiber muscular replacements yielding 5-ton lifting capacity and sub-millisecond reaction times.</p>
+                <div class="card-glow"></div>
+            </div>
+            <div class="feature-card tilt-card">
+                <div class="feature-icon">👁️</div>
+                <h3>Quantum Optics</h3>
+                <p>See across the entire electromagnetic spectrum. Built-in predictive threat analysis and HUD.</p>
+                <div class="card-glow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section id="roadmap" class="roadmap-section hidden">
+        <h2 class="section-title">Evolution Timeline</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Phase 1: Integration</h3>
+                    <p>Basic neural interfacing and diagnostic monitoring.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Phase 2: Augmentation</h3>
+                    <p>Physical prosthetic replacements and sensory enhancement.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Phase 3: Transcendence</h3>
+                    <p>Full consciousness upload. The flesh becomes obsolete.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upgrades (Pricing) Section -->
+    <section id="upgrades" class="upgrades-section hidden">
+        <h2 class="section-title">Acquire Upgrades</h2>
+        <div class="pricing-grid">
+            <div class="pricing-card tilt-card">
+                <h3>Standard</h3>
+                <div class="price">2,500 <span>CR</span></div>
+                <ul>
+                    <li>Basic Neural Link</li>
+                    <li>Standard Optics</li>
+                    <li>72hr Support</li>
+                </ul>
+                <button class="cta-button secondary">Select</button>
+            </div>
+            <div class="pricing-card premium tilt-card">
+                <div class="popular-badge">MOST POPULAR</div>
+                <h3>Elite</h3>
+                <div class="price">8,000 <span>CR</span></div>
+                <ul>
+                    <li>Advanced Neural Sync</li>
+                    <li>Tactical Optics</li>
+                    <li>Kinetic Arms</li>
+                    <li>24/7 Priority Support</li>
+                </ul>
+                <button class="cta-button primary">Select</button>
+            </div>
+            <div class="pricing-card tilt-card">
+                <h3>Ghost</h3>
+                <div class="price">CLASSIFIED</div>
+                <ul>
+                    <li>Full Cybernetic Body</li>
+                    <li>Quantum Optics</li>
+                    <li>Invisibility Cloak</li>
+                    <li>Military Grade</li>
+                </ul>
+                <button class="cta-button secondary">Contact</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Diagnostics HUD Modal -->
+    <div id="diagnostics-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>AI DIAGNOSTICS HUD</h3>
+                <button id="close-modal" class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="diag-row">
+                    <span>CPU LOAD:</span>
+                    <div class="bar-bg"><div class="bar-fill" id="cpu-bar" style="width: 45%;"></div></div>
+                    <span id="cpu-val">45%</span>
+                </div>
+                <div class="diag-row">
+                    <span>MEMORY:</span>
+                    <div class="bar-bg"><div class="bar-fill" id="mem-bar" style="width: 78%;"></div></div>
+                    <span id="mem-val">78%</span>
+                </div>
+                <div class="diag-row">
+                    <span>NEURAL TEMP:</span>
+                    <div class="bar-bg"><div class="bar-fill warning" id="temp-bar" style="width: 82%;"></div></div>
+                    <span id="temp-val">82°C</span>
+                </div>
+                <div class="diag-log" id="diag-log">
+                    > Running diagnostics...<br>
+                    > All systems nominal.<br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Neural Comm Link (Chat UI) -->
+    <div id="comm-link" class="comm-link">
+        <div class="comm-header">
+            <span>NEURAL COMM LINK</span>
+            <button id="toggle-comm" class="icon-btn">[-]</button>
+        </div>
+        <div id="comm-body" class="comm-body">
+            <div id="chat-messages" class="chat-messages">
+                <!-- Chat messages will be injected here -->
+            </div>
+            <form id="chat-form" class="chat-form">
+                <input id="chat-input" type="text" autocomplete="off" placeholder="Broadcast to all nodes..." />
+                <button type="submit" class="cta-button primary">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="logo">CYBORG<span>NEXUS</span></div>
+            <p>System Version 10.0.1 | The Flesh is Weak</p>
+        </div>
+    </footer>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
